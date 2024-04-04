@@ -1,0 +1,26 @@
+startState(0).
+finalStates([3]).
+transitions([(0, a, 1), (1, b, 2), (2, c, 3)]).
+
+For the automation above, here are the test cases, which were completed:
+w = ""
+Output:
+Path: [0, 1, 2, 3]
+Possible word: abc
+true
+
+w= "a"
+Output:
+Path: [1, 2, 3]
+Possible word: abc
+true
+
+w = "b"
+Output:
+false
+
+w = "abc"
+Output:
+Path: [3]
+Possible word: abc
+true
